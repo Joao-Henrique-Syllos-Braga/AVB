@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Manrope:wght@200..800&display=swap');
+
+:root {
+    --cor-azul: #1A0553;
+    --cor-branco-fundo: #F8F8F8;
+}
+
+body {
+    background-color: var(--cor-branco-fundo);
+    font-family: 'Manrope';
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-bar {
+    background-color: var(--cor-azul);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+}
+
+.nav-bar-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 450px;
+    height: 80px;
+}
+
+.nav-bar-links a {
+    color: #F8F8F8;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.nav-bar-links a:hover {
+    background-color: #f8f8f858;
+    transition: 0.2s;
+}
+
+.home {
+    height: 750px;
+    width: 100%;
+    background-image: url(../Imagens/Boi.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
