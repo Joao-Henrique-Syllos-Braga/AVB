@@ -8,7 +8,13 @@
     --cor-branco-fundo: #F8F8F8;
     --cor-preto-texto: #000000b1;
     --cor-boxes: #f8fafc;
+
+    --tempo-hover: 0.3s;
 }
+
+/* -------------------------------------------- */
+/* BODY */
+/* -------------------------------------------- */
 
 body {
     background-color: var(--cor-branco-fundo);
@@ -18,6 +24,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* -------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------- */
 
 .nav-bar {
     background: linear-gradient(150deg, var(--cor-azul-gradiente));
@@ -42,12 +52,18 @@ body {
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 10px;
+
+    /* TRANSIÇÃO AQUI */
+    transition: background-color var(--tempo-hover) ease;
 }
 
 .nav-bar-links a:hover {
     background-color: #f8f8f858;
-    transition: 0.2s;
 }
+
+/* -------------------------------------------- */
+/* HOME */
+/* -------------------------------------------- */
 
 .home {
     display: flex;
@@ -89,16 +105,19 @@ body {
     margin-top: 16px;
     background: linear-gradient(150deg, var(--cor-vermelho-gradiente));
     color: var(--cor-branco-fundo);
-    border: var(--cor-varmelho) solid 2px;
+    border:none;
     border-radius: 5px;
     box-shadow: 8px 8px 20px #8a959e4d;
+    /* TRANSIÇÃO AQUI */
 }
 
 .home-text button:hover {
     background: linear-gradient(150deg, var(--cor-azul-gradiente));
-    border: var(--cor-azul) solid 2px;
-    box-shadow: none;
 }
+
+/* -------------------------------------------- */
+/* HR */
+/* -------------------------------------------- */
 
 .hr {
     width: 100%;
@@ -109,12 +128,12 @@ body {
     margin: 0;
 }
 
-.hr-azul, .hr-vermelho{
+.hr-azul, .hr-vermelho {
     width: 100%;
     height: 100%;
 }
 
-.hr-azul{
+.hr-azul {
     background-color: var(--cor-azul);
 }
 
@@ -122,13 +141,17 @@ body {
     background-color: var(--cor-varmelho);
 }
 
-.container-boxes{
+/* -------------------------------------------- */
+/* BOXES */
+/* -------------------------------------------- */
+
+.container-boxes {
     display: flex;
     flex-direction: row;
     gap: 100px;
     margin: auto;
     position: absolute;
-    top:680px;
+    top: 680px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -146,7 +169,7 @@ body {
     box-shadow: 8px 8px 20px #8a959e4d;
 }
 
-.container-box i{
+.container-box i {
     font-size: 30px;
 }
 
@@ -166,4 +189,3 @@ body {
     margin: 0;
     color: var(--cor-preto-texto);
 }
-
