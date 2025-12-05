@@ -2,13 +2,14 @@
 
 :root {
     --cor-azul: #1A0553;
-    --cor-azul-gradiente: #1A0553, #061d7a;
+    --cor-azul-gradiente: #061d7a,#1A0553;
     --cor-varmelho: #9B0713;
     --cor-vermelho-gradiente: #9B0713, #e02433;
     --cor-branco-fundo: #F8F8F8;
     --cor-preto-texto: #000000b1;
     --cor-boxes: #f8fafc;
 
+    --box-shadow: 4px 4px 20px #49505665;
     --tempo-hover: 0.3s;
 }
 
@@ -30,7 +31,7 @@ body {
 /* -------------------------------------------- */
 
 .nav-bar {
-    background: linear-gradient(150deg, var(--cor-azul-gradiente));
+    background: radial-gradient(var(--cor-azul-gradiente));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,8 +53,6 @@ body {
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 10px;
-
-    /* TRANSIÇÃO AQUI */
     transition: background-color var(--tempo-hover) ease;
 }
 
@@ -69,7 +68,7 @@ body {
     display: flex;
     justify-content: left;
     height: 700px;
-    background-image: url(../Imagens/Boi.png);
+    background-image: url(Imagens/Boi.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +106,7 @@ body {
     color: var(--cor-branco-fundo);
     border:none;
     border-radius: 5px;
-    box-shadow: 8px 8px 20px #8a959e4d;
+    box-shadow: var(--box-shadow);
     /* TRANSIÇÃO AQUI */
 }
 
@@ -166,7 +165,7 @@ body {
     justify-content: center;
     border: none;
     border-radius: 50px;
-    box-shadow: 8px 8px 20px #8a959e4d;
+    box-shadow: var(--box-shadow);
 }
 
 .container-box i {
