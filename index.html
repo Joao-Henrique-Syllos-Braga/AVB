@@ -82,15 +82,34 @@
             <i class="bi bi-whatsapp"></i>
         </div>
 
-        <form action="send.php" method="POST">
-                <input class="nome" type="text" name="name" placeholder="Digite seu nome" required>
-                <input class="email" type="email" name="email" placeholder="Digite seu email" required>
+        <form id="form-contato">
+            <input class="nome" type="text" name="name" placeholder="Digite seu nome" required>
+            <input class="email" type="email" name="email" placeholder="Digite seu email" required>
 
-                <textarea class="texto" cols="30" rows="10" name="massage"
-                placeholder="Digite sua mensagem" required></textarea>
+            <textarea class="texto" cols="30" rows="10" name="message"
+            placeholder="Digite sua mensagem" required></textarea>
 
-                <button class="submit" type="submit">ENVIAR</button>
-            </form>
+            <button class="submit" type="submit">ENVIAR</button>
+        </form>
+        <p id="status"></p>
     </section>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+<script>
+  emailjs.init("1oUd39AU8gAf2JtbL"); 
+</script>
+<script>
+document.getElementById("form-contato").addEventListener("submit", function(e) {
+    e.preventDefault(); // Impede a página de recarregar
+
+    emailjs.sendForm("service_rbatcd9", "template_kic3eka", this)
+        .then(function() {
+            document.getElementById("status").innerText = "Mensagem enviada!";
+        }, function(error) {
+            document.getElementById("status").innerText = "Erro ao enviar.";
+            console.error(error);
+        });
+});
+</script>
 </html>
