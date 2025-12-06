@@ -72,6 +72,25 @@
             <img src="Imagens/Boi-ex.jpg" alt="">
         </section>
     </section>
+    <section class="contato">
+        <h1>Contate-me</h1>
+        <div class="whatsapp">
+            <div class="whatsapp-text">
+                <h2>WhatsApp</h2>
+                <p>+11930301092</p>
+            </div>
+            <i class="bi bi-whatsapp"></i>
+        </div>
 
+        <form action="send.php" method="POST">
+                <input class="nome" type="text" name="name" placeholder="Digite seu nome" required>
+                <input class="email" type="email" name="email" placeholder="Digite seu email" required>
+
+                <textarea class="texto" cols="30" rows="10" name="massage"
+                placeholder="Digite sua mensagem" required></textarea>
+
+                <button class="submit" type="submit">ENVIAR</button>
+            </form>
+    </section>
 </body>
 </html>

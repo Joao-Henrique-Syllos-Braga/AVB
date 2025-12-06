@@ -9,8 +9,9 @@
     --cor-preto-texto: #000000b1;
     --cor-boxes: #f8fafc;
     --cor-fundo-cinza: #3a3643a2;
-
-    --box-shadow: 4px 4px 20px #49505665;
+    --cor-whatsapp: #00ff00a2;
+    --cor-inputs: #f6f7ff;
+    --box-shadow: 4px 4px 20px #676a6c29;
     --tempo-hover: 0.3s;
 }
 
@@ -32,7 +33,7 @@ body {
 /* -------------------------------------------- */
 
 .nav-bar {
-    background: radial-gradient(var(--cor-azul-gradiente));
+    background: linear-gradient(45deg, var(--cor-azul-gradiente));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -203,6 +204,7 @@ body {
     padding: 0;
 }
 
+
 .sobre-container p {
     color: var(--cor-preto-texto);
 }
@@ -250,4 +252,84 @@ body {
 .boi:first-of-type div {
     margin-left: 40px;
     text-align: left;
+}
+
+.contato {
+    margin-top: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.whatsapp {
+    margin: auto;
+    background-color: var(--cor-whatsapp);
+    width: 260px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: var(--box-shadow);
+}
+
+.whatsapp i {
+    font-size: 26px;
+    color: var(--cor-preto-texto);
+}
+
+.whatsapp-text h2{
+    margin: 0;
+    font-size: 20px;
+    color: var(--cor-preto-texto);
+}
+
+.whatsapp-text p {
+    margin: 0;
+    color: var(--cor-preto-texto);
+}
+
+form {
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    gap: 6px;
+}
+
+form input {
+    background-color: var(--cor-inputs);
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    outline: none;
+}
+
+form textarea {
+    background-color: var(--cor-inputs);
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    outline: none;
+}
+
+form button {
+    background: linear-gradient(45deg, var(--cor-azul-gradiente));
+    color: var(--cor-branco-fundo);
+    border: none;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: var(--box-shadow);
+    margin-bottom: 100px;
+}
+
+form button:hover {
+    background: linear-gradient(45deg, var(--cor-vermelho-gradiente));
+    transition: 1s;
 }
