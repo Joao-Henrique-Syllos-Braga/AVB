@@ -8,6 +8,7 @@
     --cor-branco-fundo: #F8F8F8;
     --cor-preto-texto: #000000b1;
     --cor-boxes: #f8fafc;
+    --cor-fundo-cinza: #3a3643a2;
 
     --box-shadow: 4px 4px 20px #49505665;
     --tempo-hover: 0.3s;
@@ -187,4 +188,66 @@ body {
 .box-text p {
     margin: 0;
     color: var(--cor-preto-texto);
+}
+
+
+.sobre {
+    background-color: var(--cor-branco-fundo);
+    height: auto;
+}
+
+.sobre-container {
+    width: 50vw;
+    margin: auto;
+    margin-top: 16vh;
+    padding: 0;
+}
+
+.sobre-container p {
+    color: var(--cor-preto-texto);
+}
+
+.bois {
+    margin-top: 100px
+}
+
+.boi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-branco-fundo);
+    height: 26vw;
+    background-color: var(--cor-azul);
+}
+
+.boi:first-of-type {
+    background-color: var(--cor-fundo-cinza);
+}
+
+.boi img{
+    display: block;
+    width: auto;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    background-attachment: fixed;
+    
+}
+
+.boi div {
+    width: 30vw;
+    margin-right: 40px;
+    text-align: right;
+}
+.boi div p{
+    margin: 0;
+}
+
+.boi div h1{
+    margin: 0;
+}
+
+.boi:first-of-type div {
+    margin-left: 40px;
+    text-align: left;
 }
